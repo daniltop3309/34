@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ni</title>
+</head>
+<body>
+    <div style="display:flex; align-items: center">
+        {% for item in plist%}
+            <p>{{item.id}} {{item.name}} {{item.age}}</p>
+        <a href="delete/{{item.id}}">Удалить</a> |  <a href="edit/{{item.id}}">Изменить</a>
+        {% endfor %}
+    </div>
+</body>
+</html>

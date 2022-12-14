@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" class="form" style="width:300px; display: flex; flex-direction: column">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn" style="margin-top:30px;">submit</button>
+    </form>
+</body>
+</html>
